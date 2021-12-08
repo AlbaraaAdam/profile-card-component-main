@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@400;700&family=Outfit:wght@300;400;600&family=Poppins:wght@400;700&family=Roboto:wght@900&display=swap");
+body {
+  margin: 0;
+  font-family: "Kumbh Sans";
+  background: hsl(185, 75%, 39%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  width: auto;
+  height: 100vh;
+}
+.top {
+  position: fixed;
+  left: -200px;
+  top: -150px;
+  width: 400px;
+  filter: blur(1px);
+}
+.bottom {
+  position: fixed;
+  right: -200px;
+  bottom: -150px;
+  width: 400px;
+  filter: blur(1px);
+}
+.main {
+  background: white;
+  width: 375px;
+  border-radius: 1em;
+  position: relative;
+  box-shadow: 0 5px 500px rgba(0, 0, 0, 0.2);
+}
+.bg img {
+  border-radius: 1em 1em 0 0;
+  width: 100%;
+}
+.detil img {
+  border-radius: 5em;
+  position: absolute;
+  left: 137px;
+  bottom: 194px;
+  border: 5px solid white;
+  background: white;
+}
+.userName {
+  margin-top: 4em;
+  margin-bottom: 1em;
+  color: hsl(227, 10%, 46%);
+  font-size: 18px;
+  line-height: 1.7em;
+}
+span {
+  font-size: 18px;
+  font-weight: bold;
+  color: hsl(229, 23%, 23%);
+  cursor: pointer;
+}
+.loc {
+  font-weight: normal;
+  color: hsl(227, 10%, 46%);
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+.sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  place-content: space-between;
+  padding: 1.5em 3em;
+  position: relative;
+}
+.sub::before {
+  content: "";
+  position: absolute;
+  background: hsla(0, 0%, 59%, 0.411);
+  width: 100%;
+  height: 0.5px;
+  left: 0;
+  top: 0;
+}
+.num {
+  font-size: 18px;
+  font-weight: bold;
+  color: hsl(229, 23%, 23%);
+  cursor: pointer;
+}
+p {
+  margin: 0.6em 0 0 0;
+  color: hsl(0, 0%, 59%);
+  font-size: 11px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.attribution {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: white;
+}
+@media (min-width: 720px) {
+  .top {
+    position: fixed;
+    left: -300px;
+    top: -600px;
+    width: 1000px;
+    filter: blur(1px);
+  }
+  .bottom {
+    position: fixed;
+    right: -350px;
+    bottom: -700px;
+    width: 1100px;
+    filter: blur(1px);
+  }
+}
